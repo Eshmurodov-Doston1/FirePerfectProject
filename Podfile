@@ -7,4 +7,6 @@ target 'FirePerfectProject' do
 
   # Pods for FirePerfectProject
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+
 end

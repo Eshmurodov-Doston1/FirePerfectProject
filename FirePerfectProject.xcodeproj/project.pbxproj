@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		61D2D1E98106F0A56A796CA8 /* Pods_FirePerfectProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09FBC609696E4E412A863EB /* Pods_FirePerfectProject.framework */; };
+		8913F5482839723D00E80FC0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F5472839723D00E80FC0 /* Contact.swift */; };
+		8913F54A2839728700E80FC0 /* RealTimeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F5492839728700E80FC0 /* RealTimeStore.swift */; };
+		8913F54D2839771600E80FC0 /* ItemContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F54C2839771600E80FC0 /* ItemContact.swift */; };
 		89E4EFF028329374007190E9 /* FirePerfectProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4EFEF28329374007190E9 /* FirePerfectProjectApp.swift */; };
 		89E4EFF428329375007190E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E4EFF328329375007190E9 /* Assets.xcassets */; };
 		89E4EFF728329375007190E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E4EFF628329375007190E9 /* Preview Assets.xcassets */; };
@@ -25,6 +28,9 @@
 
 /* Begin PBXFileReference section */
 		6BF8326C1417CD31B0408039 /* Pods-FirePerfectProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirePerfectProject.release.xcconfig"; path = "Target Support Files/Pods-FirePerfectProject/Pods-FirePerfectProject.release.xcconfig"; sourceTree = "<group>"; };
+		8913F5472839723D00E80FC0 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		8913F5492839728700E80FC0 /* RealTimeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeStore.swift; sourceTree = "<group>"; };
+		8913F54C2839771600E80FC0 /* ItemContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemContact.swift; sourceTree = "<group>"; };
 		89E4EFEC28329374007190E9 /* FirePerfectProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirePerfectProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E4EFEF28329374007190E9 /* FirePerfectProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirePerfectProjectApp.swift; sourceTree = "<group>"; };
 		89E4EFF328329375007190E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8913F54B2839770D00E80FC0 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				8913F54C2839771600E80FC0 /* ItemContact.swift */,
+			);
+			path = items;
+			sourceTree = "<group>";
+		};
 		89E4EFE328329373007190E9 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +90,7 @@
 		89E4EFEE28329374007190E9 /* FirePerfectProject */ = {
 			isa = PBXGroup;
 			children = (
+				8913F54B2839770D00E80FC0 /* items */,
 				89E4F0152832ADC7007190E9 /* models */,
 				89E4F0142832ADC1007190E9 /* network */,
 				89E4F00328329385007190E9 /* controller */,
@@ -161,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				89E4F01A2832AF75007190E9 /* SessionStore.swift */,
+				8913F5492839728700E80FC0 /* RealTimeStore.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -169,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				89E4F0182832AF54007190E9 /* User.swift */,
+				8913F5472839723D00E80FC0 /* Contact.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -307,10 +324,13 @@
 			files = (
 				89E4F00D2832A947007190E9 /* SignUpScreen.swift in Sources */,
 				89E4F00B283299CB007190E9 /* HomeScreen.swift in Sources */,
+				8913F54A2839728700E80FC0 /* RealTimeStore.swift in Sources */,
 				89E4EFF928329375007190E9 /* Persistence.swift in Sources */,
+				8913F54D2839771600E80FC0 /* ItemContact.swift in Sources */,
 				89E4F0112832A95E007190E9 /* StartScreen.swift in Sources */,
 				89E4EFFC28329375007190E9 /* FirePerfectProject.xcdatamodeld in Sources */,
 				89E4F0192832AF54007190E9 /* User.swift in Sources */,
+				8913F5482839723D00E80FC0 /* Contact.swift in Sources */,
 				89E4F01B2832AF75007190E9 /* SessionStore.swift in Sources */,
 				89E4F0132832ADB1007190E9 /* AddPostScreen.swift in Sources */,
 				89E4EFF028329374007190E9 /* FirePerfectProjectApp.swift in Sources */,
