@@ -11,6 +11,8 @@
 		8913F5482839723D00E80FC0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F5472839723D00E80FC0 /* Contact.swift */; };
 		8913F54A2839728700E80FC0 /* RealTimeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F5492839728700E80FC0 /* RealTimeStore.swift */; };
 		8913F54D2839771600E80FC0 /* ItemContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913F54C2839771600E80FC0 /* ItemContact.swift */; };
+		89D7802E283B937500E0EBF5 /* StorageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D7802D283B937500E0EBF5 /* StorageStore.swift */; };
+		89D78031283B9EED00E0EBF5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D78030283B9EED00E0EBF5 /* ImagePicker.swift */; };
 		89E4EFF028329374007190E9 /* FirePerfectProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4EFEF28329374007190E9 /* FirePerfectProjectApp.swift */; };
 		89E4EFF428329375007190E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E4EFF328329375007190E9 /* Assets.xcassets */; };
 		89E4EFF728329375007190E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E4EFF628329375007190E9 /* Preview Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		8913F5472839723D00E80FC0 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		8913F5492839728700E80FC0 /* RealTimeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeStore.swift; sourceTree = "<group>"; };
 		8913F54C2839771600E80FC0 /* ItemContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemContact.swift; sourceTree = "<group>"; };
+		89D7802D283B937500E0EBF5 /* StorageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageStore.swift; sourceTree = "<group>"; };
+		89D78030283B9EED00E0EBF5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		89E4EFEC28329374007190E9 /* FirePerfectProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirePerfectProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E4EFEF28329374007190E9 /* FirePerfectProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirePerfectProjectApp.swift; sourceTree = "<group>"; };
 		89E4EFF328329375007190E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +73,14 @@
 			path = items;
 			sourceTree = "<group>";
 		};
+		89D7802F283B9EE100E0EBF5 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				89D78030283B9EED00E0EBF5 /* ImagePicker.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
 		89E4EFE328329373007190E9 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +102,7 @@
 		89E4EFEE28329374007190E9 /* FirePerfectProject */ = {
 			isa = PBXGroup;
 			children = (
+				89D7802F283B9EE100E0EBF5 /* helper */,
 				8913F54B2839770D00E80FC0 /* items */,
 				89E4F0152832ADC7007190E9 /* models */,
 				89E4F0142832ADC1007190E9 /* network */,
@@ -177,6 +190,7 @@
 			children = (
 				89E4F01A2832AF75007190E9 /* SessionStore.swift */,
 				8913F5492839728700E80FC0 /* RealTimeStore.swift */,
+				89D7802D283B937500E0EBF5 /* StorageStore.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -218,7 +232,7 @@
 				89E4EFE828329374007190E9 /* Sources */,
 				89E4EFE928329374007190E9 /* Frameworks */,
 				89E4EFEA28329374007190E9 /* Resources */,
-				9803347B2EE87BB012B731D2 /* [CP] Embed Pods Frameworks */,
+				A4630A68FAE2ED7F18F9328E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,7 +290,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9803347B2EE87BB012B731D2 /* [CP] Embed Pods Frameworks */ = {
+		A4630A68FAE2ED7F18F9328E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,6 +339,7 @@
 				89E4F00D2832A947007190E9 /* SignUpScreen.swift in Sources */,
 				89E4F00B283299CB007190E9 /* HomeScreen.swift in Sources */,
 				8913F54A2839728700E80FC0 /* RealTimeStore.swift in Sources */,
+				89D7802E283B937500E0EBF5 /* StorageStore.swift in Sources */,
 				89E4EFF928329375007190E9 /* Persistence.swift in Sources */,
 				8913F54D2839771600E80FC0 /* ItemContact.swift in Sources */,
 				89E4F0112832A95E007190E9 /* StartScreen.swift in Sources */,
@@ -333,6 +348,7 @@
 				8913F5482839723D00E80FC0 /* Contact.swift in Sources */,
 				89E4F01B2832AF75007190E9 /* SessionStore.swift in Sources */,
 				89E4F0132832ADB1007190E9 /* AddPostScreen.swift in Sources */,
+				89D78031283B9EED00E0EBF5 /* ImagePicker.swift in Sources */,
 				89E4EFF028329374007190E9 /* FirePerfectProjectApp.swift in Sources */,
 				89E4F00F2832A951007190E9 /* SignInScreen.swift in Sources */,
 			);

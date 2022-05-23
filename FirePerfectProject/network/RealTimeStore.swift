@@ -9,7 +9,7 @@ class RealTimeStore:ObservableObject {
     
     func storePost(contact:Contact,complation: @escaping (_ success:Bool) -> ()){
         var success = true
-        let tobePosted = ["name":contact.name!,"phoneNumber":contact.phone!]
+        let tobePosted = ["name":contact.name!,"phoneNumber":contact.phone!,"imgUrl":contact.imgUrl]
         
         ref.childByAutoId().setValue(tobePosted){ (res,error) -> Void in
             if error != nil {
@@ -27,8 +27,8 @@ class RealTimeStore:ObservableObject {
                     let value = snapshot.value as? [String: AnyObject]
                     let name = value!["name"] as? String
                     let phone = value!["phoneNumber"] as? String
-                   // let imgUrl = value!["imgUrl"] as? String
-                    self.items.append(Contact(name: name ?? "", phone: phone ?? ""))
+                    let imgUrl = value!["imgUrl"] as? String
+                    self.items.append(Contact(name: name ?? "", phone: phone ?? "",imgUrl: imgUrl ?? ""))
                 }
             }
             complation()
